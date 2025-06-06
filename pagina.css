@@ -18,6 +18,35 @@ header {
   z-index: 1000;
 }
 
+.navbar {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 95%;
+}
+
+.navbar h1 {
+    position: relative;
+    z-index: 1.5;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    animation: reflejo 2.5s infinite;
+}
+
 nav a {
   margin: 0 1.5rem;
   text-decoration: none;
@@ -37,7 +66,7 @@ nav a:hover {
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  background: #ffe8d6;
+  background: lab(93.38% 4.99 11.59);
   animation: fadeIn;
 }
 
@@ -294,3 +323,12 @@ footer {
   .bienvenida button:hover {
       transform: scale(1.05);
     }
+
+    @keyframes reflejo {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+  }

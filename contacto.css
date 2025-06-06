@@ -1,88 +1,88 @@
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-    body {
-      font-family: 'Raleway', sans-serif;
-      background: #fefae0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #fefae0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  }
 
-    header {
-      background: linear-gradient(90deg, #f4a261, #e76f51);
-      padding: 1.5rem;
-      text-align: center;
-      color: white;
-    }
+header {
+  background: linear-gradient(90deg, #f4a261, #e76f51);
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  }
 
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 
-    h2 {
-      color: #e76f51;
-      margin-bottom: 1rem;
-    }
+h2 {
+  color: #e76f51;
+  margin-bottom: 1rem;
+  }
 
-    p.description {
-      color: #555;
-      margin-bottom: 2rem;
-    }
+p.description {
+  color: #555;
+  margin-bottom: 2rem;
+  }
 
-    form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  }
 
-    form.full-width {
-      grid-column: span 2;
-    }
+form.full-width {
+  grid-column: span 2;
+  }
 
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  }
 
-    input, select, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  }
 
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  }
 
-    button {
-      grid-column: span 2;
-      padding: 1rem;
-      background: #f4a261;
-      color: white;
-      border: none;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+button {
+  grid-column: span 2;
+  padding: 1rem;
+  background: #f4a261;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  }
 
-    button:hover {
-      background: #e76f51;
-    }
+button:hover {
+  background: #e76f51;
+  }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e76f51;
-      color: white;
-      margin-top: 3rem;
-    }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e76f51;
+  color: white;
+  margin-top: 3rem;
+  }

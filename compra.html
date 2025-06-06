@@ -1,0 +1,52 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡¡Compra de tus Ovix!</title>
+  <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+
+<div>
+  <header class="brillo"><h1>¡¡Compra tus papas Fritas!!</h1></header>
+
+  <form id="formCompra">
+    <label for="tipoPapa">Tipo de papa:</label>
+    <select id="tipoPapa" required>
+      <option value="" disabled selected hidden>Selecciona que tipo de papas queres comprar</option>
+      <option value="Huevo_y_Proteina">Huevo y Proteina - $1500</option>
+      <option value="Almendras_y_Clara">Almendras y Clara - $1750</option>
+      <option value="Huevo_y_Barbacoa">Huevo y Barbacoa - $1800</option>
+      <option value="Huevo_y_Cheddar">Huevo y Cheddar - $1900</option>
+    </select>
+
+    <label for="cantidad">Cantidad de bolsas a comprar:</label>
+    <input type="number" id="cantidad" min="1" value="1" required>
+
+    <label for="medioPago">Medio de pago:</label>
+    <select id="medioPago" required>
+      <option value="" disabled selected hidden>Selecciona metodo de pago</option>
+      <option value="efectivo">Efectivo (10% de descuento)</option>
+      <option value="debito">Débito (5% de descuento)</option>
+      <option value="credito">Crédito (sin descuento)</option>
+      <option value="mercadoPago">Mercado Pago (sin descuento)</option>
+      <option value="Mayorista">Mayorista (15% de descuento solo si la compra sobrepasa las 10 unidades)</option>
+    </select>
+
+    <button type="button" onclick="calcularTotal()">Calcular Total</button>
+  </form>
+
+  <p id="total">Total: $0</p>
+
+  <a href="pagina.html" style="text-decoration: none;" id="boton-finalCompra">
+    <button style="margin-top: 10px; padding: 10px 20px; font-size: 1em; background-color: #e67e22; color: white; border: none; border-radius: 8px; cursor: pointer; transition: transform 0.3s ease;">
+        Finalizar compra
+    </button></a>
+
+  <footer>
+    <p>© 2025 Ovix. Snacks con el poder del huevo. Todos los derechos reservados.</p>
+  </footer>
+
+<script src="compra.js"></script>
+</div>  
+</body>
+</html>
