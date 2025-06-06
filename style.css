@@ -1,0 +1,100 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: aparecer 0.8s ease-out;
+}
+
+h2 {
+  color: #e76f51;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.6rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #11c7f5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(17, 199, 245, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #e76f51;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background: #f4a261;
+  transform: scale(1.02);
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  min-height: 1.2em;
+}
+
+.success {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.error {
+  color: #e63946;
+  font-weight: bold;
+}
+
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.toggle {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

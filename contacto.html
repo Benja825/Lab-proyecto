@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - OVIX</title>
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto - OVIX</h1>
+  </header>
+
+  <div class="container">
+    <h2>¿Tienes alguna consulta o sugerencia?</h2>
+    <p class="description">En Ovix, valoramos tu opinión. Si tienes preguntas, comentarios o simplemente quieres decir hola, por favor completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
+    <form action="#" method="post">
+      <div>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="pais">País</label>
+        <select id="pais" name="pais" required>
+          <option value="" disabled selected hidden>Selecciona tu país</option>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="mexico">México</option>
+          <option value="colombia">Colombia</option>
+          <option value="otros">Otro</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="motivo">Motivo del contacto</label>
+        <select id="motivo" name="motivo" required>
+          <option value="" disabled selected hidden>Selecciona una opción</option>
+          <option value="comentario">Comentario</option>
+          <option value="reclamo">Reclamo</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+
+      <div class="full-width">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Ovix. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
